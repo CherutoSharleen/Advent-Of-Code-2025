@@ -1,18 +1,10 @@
-# ADVENT OF CODE'
-
-
 # Day 1: Passwords
 # Take input, first char is Left or right
 # if get to 99 next is 0, if moving backwards get to 0 next is 99. 
 # counter for how many times you hit 0
 
-# instruction = "R665"
-# turns = int(instruction[1:]) 
-# side = instruction[0]
-# print(turns, side)
+# you may have large numbers and have to cross threshholds repeatedly
 
-
-#open file and read line by line
 position = 50
 zero_counter = 0
 with open("password-instructions.txt", "r") as instructions:
@@ -33,6 +25,7 @@ with open("password-instructions.txt", "r") as instructions:
             zero_counter+=1
 
 print("The password is ", zero_counter)
+# got ans as 969
 
 
 
